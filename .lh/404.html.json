@@ -1,0 +1,22 @@
+{
+    "sourceFile": "404.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1642085689325,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1642085754365,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-<h1>Wenn ich das hier sehe, dann wurde die Seite freigeschalten!</h1>\n\\ No newline at end of file\n+<h1>Wenn ich das hier sehe, dann wurde die Seite freigeschalten!</h1>\n+\n+<p>Leider ist ein Fehler aufgetreten, Entschuldigung dafür. Erstelle bitte ein Issue unter: https://github.com/maximilian-graf2019/raptor-backend.github.io</p>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1642085689325,
+            "name": "Commit-0",
+            "content": "<h1>Wenn ich das hier sehe, dann wurde die Seite freigeschalten!</h1>"
+        }
+    ]
+}
