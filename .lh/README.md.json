@@ -1,0 +1,26 @@
+{
+    "sourceFile": "README.md",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1642084852754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1642084937263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,42 +2,46 @@\n \n Hier findet man den Zugang für Raptor-Trails.\n \n \n-#### 1 GET All Quotes \n+#### 1 GET All trails \n #### STATUS TESTED ✔️\n-GET http://localhost:4000/api/quotes\n+GET http://localhost:4000/api/trails\n Content-Type: application/json\n \n-#### 2 GET Quote\n-####STATUS TESTED ✔️\n-GET http://localhost:4000/api/quotes/1\n+#### 2 GET trail\n+#### STATUS TESTED ✔️\n+GET http://localhost:4000/api/trails/1\n Content-Type: application/json\n \n-#### 3 Add Quote\n+#### 3 Add trail\n #### STATUS TESTED ✔️\n-POST http://localhost:4000/api/quotes\n+POST http://localhost:4000/api/trails\n Content-Type: application/json\n \n+´´´\n {\n-    \"quote\": \"Whatsup Batman\",\n-    \"quoteID\": \"2\",\n+    \"trail\": \"Whatsup Batman\",\n+    \"trailID\": \"2\",\n     \"author\": \"Batwoman\"\n }\n+´´´\n \n ### In Development:\n \n-#### 4 Update Quote API \n+#### 4 Update trail API \n #### In development 🔧\n-PUT http://localhost:4000/api/quotes/1\n+PUT http://localhost:4000/api/trails/1\n Content-Type: application/json\n \n+´´´\n {\n-    \"quote\": \"Master Wayne\",\n-    \"quoteID\": \"1\",\n+    \"trail\": \"Master Wayne\",\n+    \"trailID\": \"1\",\n     \"author\": \"Wayne\"\n }\n+´´´\n \n-#### 5 Delete Quote API \n+#### 5 Delete trail API \n #### In development 🔧\n-DELETE http://localhost:4000/api/quotes/1\n+DELETE http://localhost:4000/api/trails/1\n Content-Type: application/json\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1642085078989,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,21 +2,24 @@\n \n Hier findet man den Zugang für Raptor-Trails.\n \n \n-#### 1 GET All trails \n-#### STATUS TESTED ✔️\n+## 1 GET All trails \n+### tested ✔️\n GET http://localhost:4000/api/trails\n+\n Content-Type: application/json\n \n-#### 2 GET trail\n-#### STATUS TESTED ✔️\n+## 2 GET trail\n+### dev 🔧\n GET http://localhost:4000/api/trails/1\n+\n Content-Type: application/json\n \n-#### 3 Add trail\n-#### STATUS TESTED ✔️\n+## 3 Add trail\n+### tested ✔️\n POST http://localhost:4000/api/trails\n+\n Content-Type: application/json\n \n ´´´\n {\n@@ -25,13 +28,14 @@\n     \"author\": \"Batwoman\"\n }\n ´´´\n \n-### In Development:\n+## In Development:\n \n-#### 4 Update trail API \n-#### In development 🔧\n+## 4 Update trail API \n+### In development 🔧\n PUT http://localhost:4000/api/trails/1\n+\n Content-Type: application/json\n \n ´´´\n {\n@@ -40,8 +44,9 @@\n     \"author\": \"Wayne\"\n }\n ´´´\n \n-#### 5 Delete trail API \n-#### In development 🔧\n+## 5 Delete trail API \n+### In development 🔧\n DELETE http://localhost:4000/api/trails/1\n+\n Content-Type: application/json\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1642084852754,
+            "name": "Commit-0",
+            "content": "# Backend für raptor trails\n\nHier findet man den Zugang für Raptor-Trails.\n\n\n#### 1 GET All Quotes \n#### STATUS TESTED ✔️\nGET http://localhost:4000/api/quotes\nContent-Type: application/json\n\n#### 2 GET Quote\n####STATUS TESTED ✔️\nGET http://localhost:4000/api/quotes/1\nContent-Type: application/json\n\n#### 3 Add Quote\n#### STATUS TESTED ✔️\nPOST http://localhost:4000/api/quotes\nContent-Type: application/json\n\n{\n    \"quote\": \"Whatsup Batman\",\n    \"quoteID\": \"2\",\n    \"author\": \"Batwoman\"\n}\n\n### In Development:\n\n#### 4 Update Quote API \n#### In development 🔧\nPUT http://localhost:4000/api/quotes/1\nContent-Type: application/json\n\n{\n    \"quote\": \"Master Wayne\",\n    \"quoteID\": \"1\",\n    \"author\": \"Wayne\"\n}\n\n#### 5 Delete Quote API \n#### In development 🔧\nDELETE http://localhost:4000/api/quotes/1\nContent-Type: application/json"
+        }
+    ]
+}
