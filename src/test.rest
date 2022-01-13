@@ -1,41 +1,41 @@
 ###
-# 1 GET All Quotes 
+# 1 GET All trails 
 # STATUS TESTED ✔️
-GET http://localhost:4000/api/quotes
+GET http://localhost:4000/api/trails
 Content-Type: application/json
 
 ###
-# 2 GET Quote
-# STATUS TESTED ✔️
-GET http://localhost:4000/api/quotes/1
+# 2 GET trail
+# STATUS dev ✔️
+GET http://localhost:4000/api/trails/1
 Content-Type: application/json
 
 ###
-# 3 Add Quote
+# 3 Add trail
 # STATUS TESTED ✔️
-POST http://localhost:4000/api/quotes
+POST http://localhost:4000/api/trails
 Content-Type: application/json
 
 {
-    "quote": "Whatsup Batman",
-    "quoteID": "2",
+    "trail": "Whatsup Batman",
+    "_id": "2",
     "author": "Batwoman"
 }
 
 ###
-# 4 Update Quote API 
-# STATUS TESTED ✔️
-PUT http://localhost:4000/api/quotes/1
+# 4 Update trail API 
+# STATUS dev ✔️
+PUT http://localhost:4000/api/trails/1
 Content-Type: application/json
 
 {
-    "quote": "Master Wayne",
-    "quoteID": "1",
+    "trail": "Master Wayne",
+    "_id": "1",
     "author": "Wayne"
 }
 
 ###
-# 5 Delete Quote API 
-# STATUS TESTED ✔️
-DELETE http://localhost:4000/api/quotes/1
+# 5 Delete trail API 
+# STATUS dev ✔️
+DELETE http://localhost:4000/api/trails/1
 Content-Type: application/json

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/test.rest",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1642085587702,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1642085587702,
+            "name": "Commit-0",
+            "content": "###\n# 1 GET All trails \n# STATUS TESTED ✔️\nGET http://localhost:4000/api/trails\nContent-Type: application/json\n\n###\n# 2 GET trail\n# STATUS dev ✔️\nGET http://localhost:4000/api/trails/1\nContent-Type: application/json\n\n###\n# 3 Add trail\n# STATUS TESTED ✔️\nPOST http://localhost:4000/api/trails\nContent-Type: application/json\n\n{\n    \"trail\": \"Whatsup Batman\",\n    \"_id\": \"2\",\n    \"author\": \"Batwoman\"\n}\n\n###\n# 4 Update trail API \n# STATUS dev ✔️\nPUT http://localhost:4000/api/trails/1\nContent-Type: application/json\n\n{\n    \"trail\": \"Master Wayne\",\n    \"_id\": \"1\",\n    \"author\": \"Wayne\"\n}\n\n###\n# 5 Delete trail API \n# STATUS dev ✔️\nDELETE http://localhost:4000/api/trails/1\nContent-Type: application/json"
+        }
+    ]
+}
