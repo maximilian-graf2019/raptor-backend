@@ -8,14 +8,14 @@ import {
   searchTrail,
   updateTrail,
   deleteTrail,
-} from "./controllers/trails.ts";
+} from "./controllers/trails.ts"
 
 const router = new Router();
 
 router
   .get("/api/trail", getTrails) // Get all trails
   .get("/api/trail/:id", getTrail) // Get one trail of trailID: id
-  .get("/api/trails/searchKeys", searchTrail) // Get some trails by giving search Keys as a JSON array
+  .get("/api/trails/searchKeys", searchTrail) // Get some trails by giving search Keys as queries
   .post("/api/trail", addTrail) // Add a trail
   .put("/api/trail/:id", updateTrail) // Update a trail
   .delete("/api/trail/:id", deleteTrail); // Delete a trail
