@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/server.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1642424632872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1642424632872,
+            "name": "Commit-0",
+            "content": "import { Application } from \"https://deno.land/x/oak/mod.ts\";\nimport router from \"./routes.ts\";\nimport { serve } from \"https://deno.land/std@0.57.0/http/server.ts\";\nimport { parse } from 'https://deno.land/std/flags/mod.ts';\n\nconst { args } = Deno;\nconst PORT = 4000;\nconst argPort = parse(args).port;\n\nconst s = serve({ port: argPort ? Number(argPort) : PORT });\n\nfor await (const req of s) {\n    req.respond({ body: \"raptor trails rocks\\n\" });\n}\n\nconst app = new Application();\n\napp.use(router.routes());\napp.use(router.allowedMethods());\n\nconsole.log(`Server started on Port: http:/localhost:${PORT} 🚀`);\n\nawait app.listen({ port: PORT });\n"
+        }
+    ]
+}
